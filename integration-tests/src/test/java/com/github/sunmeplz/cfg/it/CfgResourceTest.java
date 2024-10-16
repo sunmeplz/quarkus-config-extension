@@ -13,8 +13,12 @@ public class CfgResourceTest {
 
     @Test
     public void testGetProperties() {
-        assertEquals("World",getProperty("com.github.sunmeplz.name"));
+        assertEquals("World",getProperty("com.github.sunmeplz.runtime.name"));
         assertEquals("Hello World",getProperty("another.property"));
+        assertEquals("Build",getProperty("com.github.sunmeplz.build.name"));
+        assertEquals("Hello Build",getProperty("build.another.property"));
+        assertEquals("Build And Runtime",getProperty("com.github.sunmeplz.build-and-runtime.name"));
+        assertEquals("Hello Build And Runtime",getProperty("build-and-runtime.another.property"));
     }
 
     private String getProperty(String propertyKey) {

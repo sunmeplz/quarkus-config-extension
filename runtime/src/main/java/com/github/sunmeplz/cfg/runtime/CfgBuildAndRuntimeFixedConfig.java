@@ -6,9 +6,9 @@ import io.smallrye.config.ConfigMapping;
 
 import java.util.Optional;
 
-@ConfigMapping(prefix = "com.github.sunmeplz")
-@ConfigRoot(phase = ConfigPhase.BUILD_TIME)
-public interface CfgBuildTimeConfig {
+@ConfigMapping(prefix = "com.github.sunmeplz.build-and-runtime")
+@ConfigRoot(phase = ConfigPhase.BUILD_AND_RUN_TIME_FIXED)
+public interface CfgBuildAndRuntimeFixedConfig {
     /**
      * Simple name
      * @return name
